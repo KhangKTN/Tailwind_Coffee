@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon.ico">
+    <script src="./main.js" type="text/javascript" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HUEin Coffee KTN</title>
+</head>
+<body>
+    <div id="root" class="">
+        <div class="content-wrapper font-Karla  text-base mx-auto px-8 mb-8">
+            <!-- Header -->
+            <header class="p-6 mx-auto">
+                <nav class="flex justify-between items-center relative gap-x-6">
+                    <div class="logo text-center text-xl font-semibold basis-1/3"><h4 class="cursor-pointer mx-auto">HUEin.</h4></div>
+                    <ul id="ktn-top-menu" class="basis-3/6 py-1 hidden lg:flex lg:flex-row lg:items-center lg:justify-around lg:gap-8 uppercase text-gray-500 font-medium">
+                        <li class="ktn-top-menu-item"><a href="#">Home</a></li>
+                        <li class="ktn-top-menu-item"><a href="#" class="">Product</a></li>
+                        <li class="ktn-top-menu-item"><a href="#" class="">Blog</a></li>
+                        <li class="ktn-top-menu-item"><a href="#" class="">About</a></li>
+                        <li class="ktn-top-menu-item"><a href="#" class="">Contact</a></li>
+                        <li class="ktn-top-menu-item"><a href="#" class="">StyleGuide</a></li>
+                        <li class="ktn-top-menu-item ktn-top-menu-item-active"><a target="blank" href="https://www.facebook.com/" class="">KhangKTN</a></li>
+                    </ul>
+                    <ul class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start uppercase text-lg text-gray-500 font-bold">
+                        <li class="ktn-top-menu-item">
+                            <a href="" class="flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ktn-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
+                                <span class="mx-2">Cart</span>
+                                <span class="ktn-badge-circle">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-4 sm:px-4">
+                        <svg id="ktn-toggle-top-menu-icon" class="ktn-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                        </svg>
+                    </div>
+                </nav>
+            </header>
+            <!-- Banner -->
+            <div class="slider rounded-xl h-[530px] w-full bg-[url('https://img.freepik.com/free-photo/top-view-coffee-with-copy-space_23-2148464801.jpg?w=1800&t=st=1696256817~exp=1696257417~hmac=348f5d43936dcf2b7b154769497139d219e8b1c8bf9f2bd673adb24bf8b3a9c0')] bg-cover bg-no-repeat bg-center">
+                <div class="w-full h-full rounded-xl flex justify-center items-center bg-gray-700 bg-opacity-20">
+                    <div class="mx-16 text-white text-center">
+                        <div class="font-extrabold uppercase mb-6">Best Place To Buy Coffee</div>
+                        <div class="text-5xl mb-6 font-bold">HUEin. Coffee</div>
+                        <div class="font-medium text-lg mb-8">The most versatile furniture system ever created. Design to fit your life, made to move and grow</div>
+                        <div class="flex justify-center">
+                            <div class="ktn-button px-5 py-3 bg-white text-gray-900 w-max text-lg hover:bg-opacity-90">
+                                Explorer Our Products
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Story -->
+            <div class="story flex flex-col lg:flex-row justify-center items-center gap-8 w-[95%] lg:w-[75%] mx-auto my-24">
+                <div class="w-full lg:basis-1/2"><video class="h-[550px] sm:h-[600px] w-full sm:w-[70%] mx-auto lg:h-[500px] lg:w-full object-cover object-bottom rounded-md" autoplay loop muted><source src="./img/huein-video.mp4" type="video/mp4"></video></div>
+                <div class="text-center basis-1/2 lg:text-left py-16 px-8 md:px-16 lg:p-4 bg-coffee-50 h-[500px] opacity-75 rounded-md">
+                    <div class="text-3xl mb-6 font-normal">Even the all-powerful Pointing has no control about the blind texts.</div>
+                    <div class="text-gray-500 leading-8 mb-6">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</div>
+                    <div><a class="text-coffee-400 hover:text-coffee-600 relative  after:after:-bottom-2 after:left-0 after:bg-coffee-200 hover:after:bg-coffee-600 after:h-0.5 after:w-full after:transition-all after:ease-linear after:duration-300" href="#">Read the full Story</a></div>
+                </div>
+            </div>
+            <!-- Sub head line -->
+            <div class="ktn-subheadline flex justify-center items-center mb-24">
+                <div class="ktn-subheadline-deco-line"></div>
+                <div class="ktn-subheadline-label">Featured Mugs</div>
+                <div class="ktn-subheadline-deco-line"></div>
+            </div>
+            <!-- Featured mug -->
+            <div class="featured-mugs w-[95%] lg:w-[75%] mx-auto mb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 lg:gap-4">
+                    <div class="ktn-product-card">
+                        <div class="bg-[url(./img/featured-mug-01.jpeg)] h-[400px] sm:h-[540px] w-full bg-cover bg-bottom bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div>
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Lotus Cream Cheese Tea</div>
+                            </a>
+                            <div class="">
+                                <span class="text-xl mr-1 text-coffee-600">30.000 VND</span>
+                                <span class="text-gray-400 line-through">35.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/featured-mug-03.jpeg')] h-[400px] sm:h-[540px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Avocado Smoothie</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">30.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub head line -->
+            <div class="ktn-subheadline flex justify-center items-center mb-24">
+                <div class="ktn-subheadline-deco-line"></div>
+                <div class="ktn-subheadline-label">MORE PRODUCTS</div>
+                <div class="ktn-subheadline-deco-line"></div>
+            </div>
+            <!-- More product -->
+            <div class="more-product w-[95%] lg:w-[75%] mx-auto mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4 lg:gap-4">
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-1.jpeg')] h-[450px] md:h-[380px]  w-full bg-cover bg-left bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div>
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Matcha Fresh Milk</div>
+                            </a>
+                            <div class="">
+                                <span class="text-xl mr-1 text-coffee-600">27.000 VND</span>
+                                <span class="text-gray-400 line-through">30.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-2.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Cheese Cream Milk Tea</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">27.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-3.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Hibiscus Tea Ice/Hot</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">22.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-4.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Matcha Cool Fresh</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">32.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-5.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Strawberry Yogurt</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">27.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-6.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Salty Coffee</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">22.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-7.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Banana Coco Peanut</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">32.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-8.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Cacao Ice/Hot</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">21.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/more-product-9.jpeg')] h-[450px] md:h-[380px] w-full bg-cover bg-left bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <!-- <div class="absolute w-[100px] bg-white py-2 px-4 top-2 right-2 text-center font-semibold text-coffee-400">On Sale.</div> -->
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">EXPLORER MUGS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Custard</div>
+                            </a>
+                            <div class="">
+                                <span class="text-gray-600">45.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub head line -->
+            <div class="ktn-subheadline flex justify-center items-center mb-24">
+                <div class="ktn-subheadline-deco-line"></div>
+                <div class="ktn-subheadline-label">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</div>
+                <div class="ktn-subheadline-deco-line"></div>
+            </div>
+            <!-- Ads magazine -->
+            <div class="coffee-magazine w-[95%] xl:w-[75%] mx-auto mb-24">
+                <div class="flex lg:flex-row justify-center items-center gap-5 flex-col">
+                    <div class="ktn-magazine-images flex flex-col lg:flex-row gap-3 basis-1/2 order-2 w-full mt-16 lg:mt-0">
+                        <div class="ktn-magazine-big-image lg:basis-2/3 w-full h-[280px] md:h-[350px] lg:h-[300px] lg:w-[300px] bg-[url('./img/magazine-01.jpeg')] bg-center bg-cover bg-no-repeat"></div>
+                        <div class="ktn-magazine-small-images lg:basis-1/3 flex lg:flex-col gap-3">
+                            <div class="h-[200px] md:h-[250px] lg:h-[144px] w-1/2 lg:w-[180px] bg-[url('./img/magazine-02.jpeg')] bg-center bg-cover bg-no-repeat"></div>
+                            <div class="h-[200px] md:h-[250px] lg:h-[144px] w-1/2 lg:w-[180px] bg-[url('./img/magazine-03.jpeg')] bg-center bg-cover bg-no-repeat"></div>
+                        </div>
+                    </div>
+                    <div class="ktn-magazine-post basis-1/2 flex flex-col gap-5 order-1 md:pl-8 text-center lg:text-left">
+                        <div class="uppercase text-xs font-medium tracking-widest">Premium offer</div>
+                        <div class="text-3xl">Get our Coffee Magazine</div>
+                        <div>The most versatile furniture system ever created.<br> Designed to fit your life.</div>
+                        <div class="ktn-button bg-black text-white w-[50%] hover:opacity-90 mx-auto lg:mx-0">start shopping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <!-- <div class="ktn-parallax-section h-[45vh] w-full bg-[url('./img/parallax.jpeg')] bg-center bg-cover bg-no-repeat bg-fixed mb-24"></div> -->
+         <!-- Image parallax -->
+        <div class="ktn-parallax">
+            <div class="ktn-parallax-image bg-[url('./img/parallax.jpeg')]"></div>
+        </div>    
+        <!-- End content -->
+        <div class="content-wrapper font-Karla text-base mx-auto px-8">
+            <!-- Sub head line -->
+            <div class="ktn-subheadline flex justify-center items-center my-24">
+                <div class="ktn-subheadline-deco-line"></div>
+                <div class="ktn-subheadline-label">BEHIND THE MUGS, LIFESTYLE STORIES</div>
+                <div class="ktn-subheadline-deco-line"></div>
+            </div>
+            <!-- Life story -->
+            <div class="lifestyle-stories w-[95%] lg:w-[80%] mx-auto mb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/huein-1.jpeg')] h-[300px] sm:h-[350px] md:h-[400px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">Read The Full Story</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Health Check: why do I get a headache when I haven’t had my coffee?</div>
+                            </a>
+                            <div class="text-gray-500 leading-7 mb-3">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </div>
+                            <div class="text-[13px] text-gray-600 leading-7 uppercase font-semibold tracking-widest">OCTOBER 07, 2023</div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/huein-2.jpeg')] h-[300px] sm:h-[350px] md:h-[400px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">Read The Full Story</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">How long does a cup of coffee keep you awake?</div>
+                            </a>
+                            <div class="text-gray-500 leading-7 mb-3">
+                                It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
+                            </div>
+                            <div class="text-[13px] text-gray-600 leading-7 uppercase font-semibold tracking-widest">OCTOBER 07, 2023</div>
+                        </div>
+                    </div>
+                    <div class="ktn-product-card">
+                        <div class="bg-[url('./img/huein-3.jpeg')] h-[300px] sm:h-[350px] md:h-[400px] w-full bg-cover bg-center bg-no-repeat">
+                            <a href="" alt="khangktn">
+                                <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                    <div class="ktn-button absolute hidden bottom-2 bg-white w-11/12 left-[50%] translate-x-[-50%] group-hover:block group-hover:animate-fadeIn">Read The Full Story</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="my-8">
+                            <a class="" href="#">
+                                <div class="font-medium text-xl mb-3 hover:text-coffee-400">Recent research suggests that heavy coffee drinkers may reap health benefits.</div>
+                            </a>
+                            <div class="text-gray-500 leading-7 mb-3">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </div>
+                            <div class="text-[13px] text-gray-600 leading-7 uppercase font-semibold tracking-widest">OCTOBER 07, 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subscribe -->
+            <div class="subscribe-us bg-coffee-400 opacity-90 rounded-md w-[90%] md:w-[70%] flex flex-col items-center justify-center mb-24 py-20">
+                <div class="ktn-subheadline flex justify-center items-center">
+                    <div class="ktn-subheadline-deco-line"></div>
+                    <div class="mx-4 tracking-[2px] uppercase text-xs font-bold opacity-80 text-white">Sign up and get free coffee bags</div>
+                    <div class="ktn-subheadline-deco-line"></div>
+                </div>
+                <div class="text-4xl font-bold text-white my-4">HUEin Family</div>
+                <div class="flex flex-col md:flex-row gap-3 w-full">
+                    <div class="ktn-form-item mx-auto md:ml-auto md:mr-0 w-[80%] md:w-[35%]">
+                        <input class="h-[48px] w-[100%] rounded-md left-0 bg-transparent px-8 text-white placeholder:text-white border-[1px] border-dashed border-[#2f303e] outline-none hover:opacity-80 transition-all duration-500 ease-linear focus:border-white hover:border-white" type="email" placeholder="customer@huein.io" required>
+                    </div>
+                    <div class="ktn-button rounded-md mx-auto md:mr-auto md:ml-0 bg-white w-[80%] h-max md:w-[150px]">subscribe</div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w-[100vw] bg-coffee-600 text-white py-16">
+            <div class="flex justify-center mx-auto gap-5 w-[65%] flex-col text-center lg:text-left lg:flex-row">
+                <div class="basis-2/6">
+                    <div class="text-xl font-bold mb-3">HUEin Coffee</div>
+                    <div class="mb-10">Delivering the best coffee life since 2020. From coffee geeks to the real ones.</div>
+                    <div class="text-gray-400 hover:text-white">HUEin Inc. © 2020</div>
+                </div>
+                <div class="basis-1/6">
+                    <div class="mb-3 font-semibold">MENU</div>
+                    <div>
+                        <div class=""><a href="#" class="ktn-link">Home</a></div>
+                        <div class=""><a href="#" class="ktn-link">Our Products</a></div>
+                        <div class=""><a href="#" class="ktn-link">About</a></div>
+                        <div class=""><a href="#" class="ktn-link">Contact</a></div>
+                        <div class=""><a href="#" class="ktn-link">Styleguide</a></div>
+                    </div>
+                </div>
+                <div class="basis-1/6">
+                    <div class="mb-3 font-semibold">FOLLOW US</div>
+                    <div>
+                        <div class=""><a href="https://www.facebook.com/khangktn63/" target="_blank" class="ktn-link"><span><i class="fa-brands fa-facebook text-blue-600"></i></span> Facebook</a></div>
+                        <div class=""><a href="#" class="ktn-link"><span><i class="fa-brands fa-instagram text-pink-600"></i></span> Instagram</a></div>
+                        <div class=""><a href="#" class="ktn-link"><span><i class="fa-brands fa-tiktok"></i></span> TikTok</a></div>
+                        <div class=""><a href="#" class="ktn-link"><span><i class="fa-solid fa-envelope"></i></span> Email</a></div>
+                    </div>
+                </div>
+                <div class="basis-2/6">
+                    <div class="mb-3 font-semibold">CONTACT US</div>
+                    <div>We’re Always Happy to Help</div>
+                    <div class="text-2xl"><a href="" class="ktn-link">us@coffeestyle.io</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

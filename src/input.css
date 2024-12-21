@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ktn-topmenu-expanded {
+    @apply absolute top-10 z-50 w-full bg-white text-center animate-slideDown;
+}
+
+.ktn-top-menu-item {
+    @apply hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-linear after:lg:duration-300;
+}
+
+.ktn-top-menu-item-active {
+    @apply text-gray-800;
+}
+
+.ktn-icon {
+    @apply w-5 h-5 inline-block m-auto;
+}
+
+.ktn-badge-circle {
+    @apply text-xs text-center rounded-2xl px-2.5 p-1.5 bg-cyan-500 text-white;
+}
+
+.ktn-subheadline-deco-line {
+    @apply w-8 h-px bg-gray-400;
+}
+
+.ktn-subheadline-label {
+    @apply mx-4 tracking-[2px] uppercase text-[#1d1f2e] text-xs font-bold opacity-60;
+}
+
+.ktn-product-card {
+    @apply h-auto;
+}
+
+.ktn-button {
+    @apply cursor-pointer uppercase text-center text-coffee-400 font-bold tracking-widest py-4 px-8 text-xs hover:bg-opacity-90;
+}
+
+.ktn-link {
+    @apply text-gray-300 hover:text-rose-400;
+}
+
+#root {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.content-wrapper,
+.ktn-parallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ktn-parallax {
+    height: 40vh;
+    /* transform-style: preserve-3d; */
+    /* z-index: 999; */
+}
+
+.content-wrapper {
+    height: auto;
+    z-index: 999;
+    background: white;
+}
+
+.ktn-parallax-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* transform: translateZ(-1px) scale(1.5); */
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 1280px) {
+    .ktn-parallax {
+        height: 70vh;
+        transform-style: preserve-3d;
+    }
+    .ktn-parallax-image {
+        transform: translateZ(-1px) scale(1.5);
+    }
+}
